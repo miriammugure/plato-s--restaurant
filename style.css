@@ -1,50 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   /* 1 rem =10px */
 }
-html body{
+html body {
   overflow-x: hidden;
 }
-body{
+body {
   font-size: 1.6rem;
-  font-family:var(--primary-font);
+  font-family: var(--primary-font);
 }
-:root{
-  --primary-font:"Poppins",sans-serif ;
-  --secondary-font:"Dancing Script",cursive ;
-  --color-black:#222;
-  --color-white:#ffffff;
-  --color-red:#ee2222;
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Dancing Script", cursive;
+  --color-black: #222;
+  --color-white: #ffffff;
+  --color-red: #ee2222;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-around;
   position: fixed;
   background-color: var(--color-white);
   width: 100%;
   z-index: 100;
-
 }
-.header-navlist{
+.header-navlist {
   list-style: none;
   display: flex;
   gap: 4rem;
 }
-.header-navlist a{
+.header-navlist a {
   text-decoration: none;
   text-transform: capitalize;
 }
-.hero{
+.hero {
   height: 70vh;
-  background-image:linear-gradient(rgba(0,0,0,.4) rgba(0,0,0,.4)) url() ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4)) url();
   background-position: center;
   background-size: cover;
   display: flex;
@@ -52,37 +51,112 @@ body{
   align-items: center;
   /* margin-top: 6rem; */
 }
-.hero-text-box{
+.hero-text-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 3rem;
 }
-.hero-sub-main-title,.hero-sub-title{
-  color:var(--color-black);
+.hero-sub-main-title,
+.hero-sub-title {
+  color: var(--color-black);
 }
-.hero-sub-title{
-font-family: var(--secondary-font);
-font-size: 6rem;
-text-transform: capitalize;
+.hero-sub-title {
+  font-family: var(--secondary-font);
+  font-size: 6rem;
+  text-transform: capitalize;
 }
-.hero-sub-main-title{
+.hero-sub-main-title {
   /* font-family: var(--primary-font); */
   font-size: 3rem;
-
 }
-.hero-cta{
+.hero-cta {
   background-color: var(--color-red);
   text-decoration: none;
   text-transform: capitalize;
-  border-radius:10px;
+  border-radius: 10px;
   padding: 1.5rem 2rem;
-
 }
-@media  screen and (max-width:400px) {
-  .header-navlist{
+@media screen and (max-width: 400px) {
+  .header-navlist {
     display: flex;
     flex-direction: column;
+  }
+}
+.about {
+  padding: 6rem 12rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title-sub-title {
+  font-family: var(--secondary-font);
+  color: var(--color-red);
+  font-size: 4rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.title-main-title {
+  text-transform: uppercase;
+  color: var(--color-black);
+  letter-spacing: 2px;
+  font-size: 5rem;
+  text-align: center;
+}
+.about-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about-text {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: #888;
+  line-height: 2;
+}
+.about-cta {
+  /* this will center an inline element */
+  /* display: block; */
+  /* width: max-content; */
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+  margin: 0 auto;
+}
+.about-image img {
+  width: 50rem;
+  border-radius: 15px;
+  z-index: 90;
+}
+.about-image img:hover {
+  transform: scale(1.02);
+}
+@media screen and (max-width: 62.5em) {
+  .about {
+    padding: 6em 0.8em;
+  }
+}
+@media screen and (max-width: 53.125em) {
+  .about {
+    flex: display;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  .about-image img {
+    width: 100vw;
+    border-radius: 15px;
+    transition: all 0.5s ease;
   }
 }
