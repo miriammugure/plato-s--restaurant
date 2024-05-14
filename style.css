@@ -223,3 +223,12 @@ body {
   gap: 3rem;
   row-gap: 4rem;
 }
+.footer {
+  background-color: #999;
+  padding: 1rem;
+}
+.footer-text {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
