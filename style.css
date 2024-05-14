@@ -42,3 +42,47 @@ body{
   text-decoration: none;
   text-transform: capitalize;
 }
+.hero{
+  height: 70vh;
+  background-image:linear-gradient(rgba(0,0,0,.4) rgba(0,0,0,.4)) url() ;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 6rem; */
+}
+.hero-text-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hero-sub-main-title,.hero-sub-title{
+  color:var(--color-black);
+}
+.hero-sub-title{
+font-family: var(--secondary-font);
+font-size: 6rem;
+text-transform: capitalize;
+}
+.hero-sub-main-title{
+  /* font-family: var(--primary-font); */
+  font-size: 3rem;
+
+}
+.hero-cta{
+  background-color: var(--color-red);
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius:10px;
+  padding: 1.5rem 2rem;
+
+}
+@media  screen and (max-width:400px) {
+  .header-navlist{
+    display: flex;
+    flex-direction: column;
+  }
+}
