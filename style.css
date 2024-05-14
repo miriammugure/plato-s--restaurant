@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* 1 rem =10px */
+}
+html body{
+  overflow-x: hidden;
+}
+body{
+  font-size: 1.6rem;
+  font-family:var(--primary-font);
+}
+:root{
+  --primary-font:"Poppins",sans-serif ;
+  --secondary-font:"Dancing Script",cursive ;
+  --color-black:#222;
+  --color-white:#ffffff;
+  --color-red:#ee2222;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: var(--color-white);
+  width: 100%;
+  z-index: 100;
+
+}
+.header-navlist{
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+.header-navlist a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
